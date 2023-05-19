@@ -14,26 +14,24 @@ from config import BANNED_USERS
 from strings import get_command
 from DzL import app
 from DzL.core.call import Dz
-from DzL.utils.database import is_muted, mute_on
+from DzL.utils.database import set_loop
 from DzL.utils.decorators import AdminRightsCheck
 
 # Commands
-MUTE_COMMAND = get_command("MUTE_COMMAND")
+STOP_COMMAND = get_command("STOP_COMMAND")
 
 
 @app.on_message(
-    filters.command(MUTE_COMMAND)
+    filters.command(STOP_COMMAND)
     & filters.group
     & ~filters.edited
     & ~BANNED_USERS
 )
 @AdminRightsCheck
-async def mute_admin(cli, message: Message, _, chat_id):
-    if not len(message.command) == 1 or message.reply_to_message:
+async def stop_music(cli, message: Message, _, chat_id):
+    if not len(message.command) == 1:
         return await message.reply_text(_["general_2"])
-    if await is_muted(chat_id):
-        return await message.reply_text(_["admin_5"])
-    await mute_on(chat_id)
-    await Dz.mute_stream(chat_id)
+    await Dz.stop_stream(chat_id)
+    await set_loop(chat_id, 0)
     await message.reply_text(
-        _["admin_6"])
+        _["admin_9"])
