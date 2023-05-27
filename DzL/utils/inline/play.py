@@ -48,7 +48,7 @@ def stream_markup(_, videoid, chat_id):
         ],
                 [
             InlineKeyboardButton(
-                text=f"♥ɢʀᴏᴜᴘ♥",
+                text=f_["S_B_3"],
                 url=f"{SUPPORT_GROUP}",
             ),
         ],
