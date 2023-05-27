@@ -40,21 +40,17 @@ def stream_markup(_, videoid, chat_id):
                 url=f"{SUPPORT_CHANNEL}",
             ),
           ],
-        [
-            InlineKeyboardButton(
-                text=f"♥ɢʀᴏᴜᴘ♥",
-                url=f"https://t.me/Ajanabee_Duniya",
-            )
-        ],
+          
            [     InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
             ),
         ],
-        [
+                [
             InlineKeyboardButton(
-                text=_["CLOSEMENU_BUTTON"], callback_data="close"
-            ),
+                text=f"♥ɢʀᴏᴜᴘ♥",
+                url=f"https://t.me/Ajanabee_Duniya",
+            )
         ],
     ]
     return buttons
@@ -71,16 +67,12 @@ def telegram_markup(_, chat_id):
                 "Inline", switch_inline_query_current_chat=""
             ),
         ],
+       
         [
             InlineKeyboardButton(
                 text=f"♥ɢʀᴏᴜᴘ♥",
                 url=f"https://t.me/Ajanabee_Duniya",
             )
-        ],
-        [
-            InlineKeyboardButton(
-                text=_["CLOSEMENU_BUTTON"], callback_data="close"
-            ),
         ],
     ]
     return buttons
