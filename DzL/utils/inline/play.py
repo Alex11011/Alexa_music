@@ -57,7 +57,7 @@ def telegram_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_3"],
+                text=_["S_B_4"],
                 url=f"{SUPPORT_CHANNEL}",
             ),
             InlineKeyboardButton(
@@ -65,16 +65,11 @@ def telegram_markup(_, chat_id):
             ),
         ],
         [
-
             InlineKeyboardButton(
-
-                text=_["S_B_5"],
-
-                url=f"{SUPPORT_GROUP}",
-               InlineKeyboardButton(
-
-               "Inline", switch_inline_query_current_chat=""
-            ),
+                text=f"♥ɢʀᴏᴜᴘ♥",
+                url=f"https://t.me/Ajanabee_Duniya",
+            )
+        ],
         [
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
