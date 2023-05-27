@@ -49,7 +49,7 @@ def stream_markup(_, videoid, chat_id):
                 [
             InlineKeyboardButton(
                 text=f"♥ɢʀᴏᴜᴘ♥",
-                url=f"https://t.me/Ajanabee_Duniya",
+                url=f"{SUPPORT_GROUP}",
             )
         ],
     ]
@@ -71,7 +71,7 @@ def telegram_markup(_, chat_id):
         [
             InlineKeyboardButton(
                 text=f"♥ɢʀᴏᴜᴘ♥",
-                url=f"https://t.me/Ajanabee_Duniya",
+                url=f"{SUPPORT_GROUP}",
             )
         ],
     ]
