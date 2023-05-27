@@ -71,7 +71,9 @@ def telegram_markup(_, chat_id):
                 text=_["S_B_5"],
 
                 url=f"{SUPPORT_GROUP}",
+               InlineKeyboardButton(
 
+               "Inline", switch_inline_query_current_chat=""
             ),
         [
             InlineKeyboardButton(
