@@ -39,7 +39,14 @@ def stream_markup(_, videoid, chat_id):
                 text=_["S_B_4"],
                 url=f"{SUPPORT_CHANNEL}",
             ),
-                InlineKeyboardButton(
+          ],
+        [
+            InlineKeyboardButton(
+                text=f"♥ɢʀᴏᴜᴘ♥",
+                url=f"https://t.me/Ajanabee_Duniya",
+            )
+        ],
+           [     InlineKeyboardButton(
                 text=_["PL_B_3"],
                 callback_data=f"PanelMarkup {videoid}|{chat_id}",
             ),
