@@ -36,7 +36,7 @@ def stream_markup(_, videoid, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text="GROUP",
+                text=_["S_B_4"],
                 url=f"{SUPPORT_CHANNEL}",
             ),
           ],
@@ -48,9 +48,9 @@ def stream_markup(_, videoid, chat_id):
         ],
                 [
             InlineKeyboardButton(
-                text=f_["S_B_3"],
-                url=f"{SUPPORT_GROUP}",
-            ),
+                text=f"♥ɢʀᴏᴜᴘ♥",
+                url=f"https://t.me/Ajanabee_Duniya",
+            )
         ],
     ]
     return buttons
@@ -70,9 +70,9 @@ def telegram_markup(_, chat_id):
        
         [
             InlineKeyboardButton(
-                text="GROUP"
-                url=f"{SUPPORT_GROUP}",
-            ),
+                text=f"♥ɢʀᴏᴜᴘ♥",
+                url=f"https://t.me/Ajanabee_Duniya",
+            )
         ],
     ]
     return buttons
