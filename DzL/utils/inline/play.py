@@ -65,6 +65,15 @@ def telegram_markup(_, chat_id):
             ),
         ],
         [
+
+            InlineKeyboardButton(
+
+                text=_["S_B_5"],
+
+                url=f"{SUPPORT_GROUP}",
+
+            ),
+        [
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
             ),
