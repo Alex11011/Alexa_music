@@ -57,7 +57,7 @@ def telegram_markup(_, chat_id):
     buttons = [
         [
             InlineKeyboardButton(
-                text=_["S_B_4"],
+                text=_["S_B_3"],
                 url=f"{SUPPORT_CHANNEL}",
             ),
             InlineKeyboardButton(
